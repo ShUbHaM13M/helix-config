@@ -1,0 +1,36 @@
+# theme
+theme = "kanagawa"
+
+[editor]
+line-number = "relative"
+shell = ["cmd", "/C"]
+auto-completion = true
+auto-format = true
+idle-timeout = 0
+true-color = true
+auto-pairs = true
+color-modes = true
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-messages = false
+auto-signature-help = true
+display-signature-help-docs = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.search]
+smart-case = true
+wrap-around = true
+
